@@ -237,13 +237,16 @@ font-weight: 600;
 
 .ingredients-list {
   display: flex;
+  gap: 19px;
 }
 
 
 .ingredients-list-item {
+  width: calc((100% - 57px ) / 4);
   padding: 28px 32px;
   border-radius: 15px;
   border: 1px solid #FD9222;
+
 }
 
 .ingredients-list-item:nth-child(4n+1) {
@@ -255,8 +258,15 @@ font-weight: 600;
   background-color: #FFF;
 }
 
+.ingredients-list-item:nth-child(4n+3) {
+  background-color: #1E1823;;
+  border-color: #1E1823;
+  color: #FFF;
+}
+
 
 .ingredients-list-img {
+  margin-bottom: 36px;
 }
 
 .ingredients-list-title {
@@ -272,20 +282,39 @@ font-weight: 600;
 .how-made {
 }
 
+.how-made-title {
+  margin-bottom: 50px;
+}
 
+.how-made-content-wrapper {
+display: flex;
+gap: 20px;
+}
 
 .how-made-img {
 }
 
-.how-made-title {
+.how-made-text-wrapper {
+padding: 32px 32px;
+border-radius: 15px;
+background: #FFF;
+}
+
+.how-made-list-title {
   width: 350px;
   color: #111;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33; 
+  margin-bottom: 28px;
 }
 
 .how-made-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-right: 26px;
+  padding-left: 14px;
 }
 
 .how-made-list-item {
@@ -302,16 +331,36 @@ font-weight: 600;
 
 }
 
-.reviews-list {
+.reviews-title {
+ margin-bottom: 50px;
+}
 
+.reviews-list {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 50px;
+  
+ 
 }
 
 
 .reviews-list-item {
-
+ position: relative;
+ width: calc((100% - 56px) / 3);
+ border-radius: 15px;
+ border: 1px solid rgba(17, 17, 17, 0.10);
+ background: #FFF;
+ box-shadow: 0px 9.049px 100px 0px rgba(17, 17, 17, 0.03);
+ padding-top: 56px;
+ padding-bottom: 24px;
+ padding-left: 24px;
+ padding-right: 24px;
 }
 
 .reviews-list-avatar {
+  position: absolute;
+  top: 0;
+  left: 0;
 
 }
 
@@ -321,6 +370,7 @@ font-weight: 600;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
+  margin-bottom: 24px;
 }
 
 .reviews-list-text {
@@ -333,11 +383,17 @@ font-weight: 600;
 }
 
 .leave-review-btn {
+  display: block;
   color: #111;
   font-size: 18px;
   font-weight: 600;
   border-radius: 100px;
   padding: 14px 40px;
+  border-radius: 100px;
+  border: 1px solid #FD9222;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
 }
 
 .leave-review-btn:hover,
@@ -349,12 +405,18 @@ font-weight: 600;
 /* <!-- footer --> */
 
 .page-footer {
+  background: #1E1823;
 }
 
-.page-footer-top-side {
+.page-footer-top-block {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 52px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .page-footer-title {
+  width: 300px;
   color: #FFF;
   font-size: 28px;
   font-weight: 500;
@@ -362,30 +424,42 @@ font-weight: 600;
   letter-spacing: -0.02em;
 }
 
+.page-footer-contact-block {
+
+}
 .contact-title {
   color: #FFF;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.29;
-  text-align: center;
+  margin-bottom: 14px;
 }
 
 .contact-list {
 }
 
-.contact-list-item {
+.contact-list-item:not(:last-child) {
+  margin-bottom: 4px;
 }
 
 .contact-list-link {
   color: #FFF;
-  text-align: center;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.29;
   letter-spacing: -0.02em;
+  font-style: normal;
 }
 
-
-.page-footer-bottom-side {
+.contact-list-link:hover,
+.contact-list-link:focus {
+  color: #fd9222;
 }
 
+.page-footer-bottom-block {
+ padding-top: 24px;
+}
+
+.page-footer-menu-link {
+  color: #ffffff;
+}
