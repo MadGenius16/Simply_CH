@@ -115,8 +115,8 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: -0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .page-nav-link:hover,
@@ -127,6 +127,12 @@ body {
 /* <!-- HERO --> */
 
 .hero {
+  width: 1136px;
+  padding: 381px 40px 40px 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  background-color: rgba(17, 17, 17, 0.6);  
 }
 
 .main-title {
@@ -135,16 +141,25 @@ body {
   font-size: 28px;
   font-weight: 500;
   line-height: 1.21;
-  letter-spacing: -0.03em; 
+  letter-spacing: -0.03em;
+  margin-bottom: 32px; 
+}
+
+.hero-bottom-block {
+  display: flex;
+  align-items: center;
 }
 
 .buy-now-btn {
+  min-width: 144px;
   color: #FFF;
   font-size: 14px;
   font-weight: 600;
   border-radius: 100px;
-  background: #FD9222; 
+  background-color: #FD9222; 
   padding: 14px 40px;
+  margin-right: 14px;
+  border: none;
 }
 
 .buy-now-btn:hover,
@@ -157,7 +172,12 @@ body {
   color: #FFF;
   font-size: 14px;
   font-weight: 600;
-  width: 103px;
+  min-width: 183px;
+  padding: 14px 40px;
+  border-radius: 100px;
+  border: 1px solid #FFF;
+  text-align: center;
+  margin-right: auto;
 }
 
 .How-made-link:focus,
@@ -170,8 +190,9 @@ body {
   color: #FFF;
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.28;
+  line-height: 1.29;
   letter-spacing: -0.03em;
+  
 }
 
 .scroll-down-link:hover,
@@ -187,19 +208,27 @@ body {
   margin-top: 72px;
 }
 
+.benefits-container {
+  padding-left: 34px;
+  padding-right: 34px;
+}
+
 .benefits-list {
+  display: flex;
+  gap: 88px;
 
 }
 
 
 .benefits-list-item {
-
+  width: calc((100% - 2 * 88px) / 3);
 }
 
 .benefits-list-title {
 color: #FFF;
 font-size: 18px;
 font-weight: 600;
+margin-bottom: 18px;
 }
 
 .benefits-list-text {
@@ -207,7 +236,7 @@ font-weight: 600;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: -0.02em;
-  width: 308px;
+
 }
 
 /* <!-- ingredients --> */
@@ -411,7 +440,8 @@ background: #FFF;
 .page-footer-top-block {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 52px;
+  padding-bottom: 54px;
+  padding-top: 50px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -462,4 +492,5 @@ background: #FFF;
 
 .page-footer-menu-link {
   color: #ffffff;
+  margin-bottom: 50px;
 }
