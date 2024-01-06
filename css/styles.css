@@ -1,3 +1,5 @@
+/* <!-- COMMON STYLES --> */
+
 .list {
   list-style-type: none;
 }
@@ -13,6 +15,22 @@ button {
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+.accent {
+  color: #FD9222;
+}
+
+.section-title {
+  color: #111;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;  
+}
+
+/* <!-- HEADER --> */
 
 .page-header {
 
@@ -51,14 +69,246 @@ body {
   color: #FD9222;
 }
 
+/* <!-- HERO --> */
+
+.hero {
+}
+
+.main-title {
+  width: 484px;
+  color: #FFF;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.03em; 
+}
+
+.buy-now-btn {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 100px;
+  background: #FD9222; 
+  padding: 14px 40px;
+}
+
+.buy-now-btn:hover,
+.buy-now-btn:focus {
+  color: #FD9222;
+  background: #FCF1E0;
+}
+
+.How-made-link {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 600;
+  width: 103px;
+}
+
+.How-made-link:focus,
+.How-made-link:hover {
+  color: #FD9222;  
+}
+
+
+.scroll-down-link {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.28;
+  letter-spacing: -0.03em;
+}
+
+.scroll-down-link:hover,
+.scroll-down-link:focus {
+  color: #FD9222;
+}
+
+/* <!-- Our benefits --> */
+
+.benefits {
+
+}
+
+.benefits-list {
+
+}
+
+
+.benefits-list-item {
+
+}
+
+.benefits-list-title {
+color: #FFF;
+font-size: 18px;
+font-weight: 600;
+}
+
+.benefits-list-text {
+  color: rgba(255, 255, 255, 0.70);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  width: 308px;
+}
+
+/* <!-- ingredients --> */
+
+.ingredients {
+}
+
+.ingredients-discription {
+  width: 486px;
+  color: #111;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;  
+}
+
+.ingredients-list {
+}
+
+
+.ingredients-list-item {
+}
+
+.ingredients-list-img {
+}
+
+.ingredients-list-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;  
+}
+
+/* <!-- hOW IT’S made --> */
+
+.how-made {
+}
 
 
 
+.how-made-img {
+}
+
+.how-made-title {
+  width: 350px;
+  color: #111;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33; 
+}
+
+.how-made-list {
+}
+
+.how-made-list-item {
+  color: #111;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;  
+}
+
+/* <!-- reviews --> */
+
+.reviews {
+
+}
+
+.section-title {
+
+}
+
+.reviews-list {
+
+}
 
 
+.reviews-list-item {
+
+}
+
+.reviews-list-avatar {
+
+}
+
+.reviews-list-fullname {
+  color: #111;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+}
+
+.reviews-list-text {
+  color: rgba(17, 17, 17, 0.70);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+.leave-review-btn {
+  color: #111;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 100px;
+  padding: 14px 40px;
+}
+
+.leave-review-btn:hover,
+.leave-review-btn:focus {
+  color: #FFF;
+  background: #FD9222;
+}
+
+/* <!-- footer --> */
+
+.page-footer {
+}
+
+.page-footer-top-side {
+}
+
+.page-footer-title {
+  color: #FFF;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21; 
+  letter-spacing: -0.02em;
+}
+
+.contact-title {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  text-align: center;
+}
+
+.contact-list {
+}
+
+.contact-list-item {
+}
+
+.contact-list-link {
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
 
 
-
-
-
+.page-footer-bottom-side {
+}
 
