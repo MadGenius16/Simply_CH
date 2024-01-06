@@ -12,12 +12,42 @@ button {
   cursor: pointer;
 }
 
+h1,h2,h3,h4,h5,h6,p {
+margin-bottom: 0;
+margin-top: 0;
+}
+
+ul,ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
 
 .accent {
   color: #FD9222;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .section-title {
@@ -28,6 +58,14 @@ body {
   line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;  
+}
+
+.container {
+  width: 1168px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 /* <!-- HEADER --> */
@@ -218,10 +256,6 @@ font-weight: 600;
 /* <!-- reviews --> */
 
 .reviews {
-
-}
-
-.section-title {
 
 }
 
