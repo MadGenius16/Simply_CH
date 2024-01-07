@@ -251,10 +251,34 @@ margin-left: 4px;
 
 }
 
-
 .benefits-list-item {
+  position: relative;
   width: calc((100% - 2 * 88px) / 3);
 }
+
+.benefits-list-item:not(:last-child)::after {
+  position: absolute;
+  top: 50%;
+  right: -18px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  content: '';
+}
+
+.benefits-list-icon-wrapper {
+  display: flex;
+  width: 62px;
+  height: 62px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;  
+  border-radius: 365px;
+  border: 1px solid rgba(255, 255, 255, 0.50);
+  margin-bottom: 22px;
+}
+
 
 .benefits-list-title {
 color: #FFF;
