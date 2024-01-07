@@ -13,11 +13,18 @@
 <body>
 
 			<!-- HEADER -->
-
 	<header class="page-header">
-    <div class="container">
+    <div class="container page-header-container">
       <nav class="page-nav">
-        <a class="logo link" href="./index.html"><i>SIMPLY</i> CHOCOLATE</a>
+        <a class="logo link" href="./index.html"><i>SIMPLY</i> CHOCOLATE
+        <svg 
+        class="logo-icon" 
+        width="24" 
+        height="24" 
+        aria-label="logo-chocolate">
+          <use href="./images/symbol-defs.svg#icon-chocolate"></use>
+        </svg>
+        </a>
         <ul class="page-nav-list list">
           <li class="page-nav-list-item">
             <a class="page-nav-link link" href="./index.html">Home</a>
@@ -30,6 +37,23 @@
           </li>
         </ul>
       </nav>
+      <ul class="social-list list">
+        <li class="social-list-item">
+          <a class="social-list-link" href="">
+            <svg class="social-list-icon" width="24" height="24" aria-label="instagram-icon">
+              <use href="./images/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a class="social-list-link" href="">
+            <svg class="social-list-icon" width="24" height="24" aria-label="twitter-icon">
+              <use href="./images/symbol-defs.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+
+      </ul>
     </div>
 	</header>
 
@@ -109,6 +133,9 @@
               width="206"
               height="160">
               <h3 class="ingredients-list-title">MILK CHOCOLATE</h3>
+              <div class="overlay">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit architecto minima ut id ad, ab fugiat consectetur nisi iure, error, eius veniam dicta soluta vel adipisci! Inventore numquam temporibus dolore.</p>
+              </div>
             </li>
             <li class="ingredients-list-item">
               <img

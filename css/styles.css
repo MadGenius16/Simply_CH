@@ -76,7 +76,10 @@ body {
 
 /* <!-- HEADER --> */
 
-.page-header {
+.page-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
 }
 
@@ -89,12 +92,19 @@ body {
 }
 
 .logo {
-  display: block;
+  display: flex;
+  align-items: center;
   color: #111;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: -0.03em;
+}
+
+.logo-icon {
+stroke: #FD9222;
+fill: #FCF1E0;
+margin-left: 4px;
 }
 
 .page-nav-list {
@@ -116,11 +126,30 @@ body {
   letter-spacing: -0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: color 250ms linear;
 }
 
 .page-nav-link:hover,
 .page-nav-link:focus{
   color: #FD9222;
+}
+
+.social-list {
+ display: flex;
+ gap: 18px;
+}
+
+.social-list-link {
+  display: block;
+  line-height: 0;
+  stroke: #111;
+  fill: none;
+  transition: stroke 250ms linear;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+ stroke: #FD9222;  
 }
 
 /* <!-- HERO --> */
@@ -132,6 +161,10 @@ body {
   margin-right: auto;
   border-radius: 30px;
   background-color: rgba(17, 17, 17, 0.6);  
+  background-image: linear-gradient(
+    rgba(17, 17, 17, 0.40),
+    rgba(17, 17, 17, 0.40)),  url(../images/bg-chocolate.jpg);
+  background-size: cover;
 }
 
 .main-title {
@@ -270,12 +303,33 @@ margin-bottom: 18px;
 
 
 .ingredients-list-item {
+  position: relative;
+  overflow: hidden;
   width: calc((100% - 57px ) / 4);
   padding: 28px 32px;
   border-radius: 15px;
   border: 1px solid #FD9222;
-
 }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FFF;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 20px;
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transform 250ms linear  ;
+}
+
+.ingredients-list-item:hover .overlay {
+  transform: translateY(0%);
+}
+
+
 
 .ingredients-list-item:nth-child(4n+1) {
   background-color: #FD9222;
@@ -304,6 +358,9 @@ margin-bottom: 18px;
   letter-spacing: -0.02em;
   text-transform: uppercase;  
 }
+
+
+
 
 /* <!-- hOW IT’S made --> */
 
@@ -388,7 +445,9 @@ background: #FFF;
 .reviews-list-avatar {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
 
 }
 
