@@ -84,6 +84,7 @@ body {
   display: flex;
   width: 980px;
   justify-content: space-between;
+  align-items: center;
 
 }
 
@@ -94,8 +95,6 @@ body {
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: -0.03em;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .page-nav-list {
@@ -115,8 +114,8 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: -0.02em;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .page-nav-link:hover,
@@ -488,9 +487,9 @@ background: #FFF;
 
 .page-footer-bottom-block {
  padding-top: 24px;
+ padding-bottom: 50px;
 }
 
 .page-footer-menu-link {
   color: #ffffff;
-  margin-bottom: 50px;
 }
